@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor class</title>
+<style>
+    .attribution { font-size: 11px; text-align: center; padding:2px 0px 0px 0px }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	body{
+		background-color:hsl(30, 38%, 92%); width: auto; margin:0; padding:0; text-align:center
+}
+	.image, .text{ width:50%;  border-radius:10px;
+}
+	.minibody{
+border-radius:20px;
+width:450px;
+background-color: #f1f1f1;
+margin:auto;
+display:flex;
+transform:translate(0px, 150px)
+}
+	.text{ background-color:white; }
+	.image2{display:none}
+  p{
+  margin:0px; padding:0px 15px 12px 15px; text-align:left;
+  }
+  .price{ font-size:30px; color:hsl(212, 21%, 14%) }
+  
+  .button{font-weight:bold; background-color:hsl(158, 36%, 37%); font-family:Montserrat;  border:none; padding:10px 55px 10px 55px; color:white; cursor:pointer; border-radius: 5px;}
+  .button:hover {  background-color: hsl(158, 36%, 21%) ;}
+ 
+
+@media (max-width: 500px) {
+.minibody{ display:block;
+position:relative;
+width:50%;
+transform:translate(0px, 90px)
+}
+
+ .text{width:100%; padding:1px; }
+.image{display:none}
+.image2{display:block;width:100%; height:150px; border-radius:10px}
+}
+  </style>
+</head>
+
+<body>
+	<div class='minibody' > <img class='image' src='images/image-product-desktop.jpg' alt='product design'>
+<img class='image2' src='images/image-product-mobile.jpg' alt='product design'>
+
+
+<div class='text' >
+
+	<p style='font-family:Montserrat;  padding:15px 0px 12px 10px; font-size:14px;  color:hsl(228, 12%, 48%)'> P E R F U M E </p>
+    
+  <p style='font-family:Fraunces; font-size:30px; color:hsl(212, 21%, 14%)'> <b> Gabrielle <br> Essence Eau <br> De Parfum</b></p>
+  
+  <p style='font-family:Montserrat;  font-size:14px; color:hsl(228, 12%, 48%)'>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+  
+ <p class='price' style='font-family:Fraunces'> <span style='color:hsl(158, 36%, 37%);'>  $149.99 </span> <sup style='font-size:12px; font-family:Montserrat;'>  <del>  $169.99  </del> </sup> </p>
+
+ <button class='button'>  <img src='images/icon-cart.svg' >  Add to Cart  </button>
+ 
+  <p class="attribution" >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kolawole Roqeeb</a>.
+    </p>
+ </div>
+  </div>
+  
+  
+</body>
+</html>
